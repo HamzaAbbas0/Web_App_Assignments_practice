@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salyani Form</title>
+
+    <style>
+        p {
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+
+        #back {
+            height: 100px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tcenter {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        #main_sec {
+            height: 1000px;
+            width: 100%;
+            background-color: #6B5ACD;
+            margin: 25px 25px 0px 25px;
+            padding-left: 20px;
+            /* margin-top: 25px; */
+            padding-top: 25px;
+        }
+
+
+
+        #main_sec label {
+            display: inline-block;
+            width: 150px;
+
+            vertical-align: top;
+        }
+
+        #main_sec input[type="radio"] {
+            width: 10px;
+            /* margin-top: 10px; */
+        }
+
+        #main_sec input[type="text"],
+        #main_sec input[type="date"] {
+            width: 250px;
+            height: 25px;
+            margin-bottom: 29px;
+        }
+
+        #sec1 label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        #main_sec table input[type="text"] {
+            width: 150px;
+            height: 25px;
+            margin-bottom: 12px;
+        }
+
+        #main_sec textarea {
+            width: 550px;
+            height: 125px;
+            margin-bottom: 29px;
+        }
+
+        #p1 {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        #colort {
+            color: white;
+            float: right;
+            margin-right: 520px;
+        }
+
+        #sec1 {
+            height: 300px;
+            width: 100%;
+            background-color: #6B5ACD;
+            margin-left: 25px;
+            padding-left: 25px;
+        }
+        #button{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            margin-top: 40px;
+
+        }
+        .btn1{
+            margin-right: 35px;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: rgb(19, 179, 207);
+            border: transparent;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="back">
+        <img src="images/salyani_background.png" alt="">
+    </div>
+
+    <div class="tcenter">
+        <a href="https://forms.saylaniwelfare.com/en" target="_blank">STUDENT REGISTRATION FORM</a>
+    </div>
+
+    <div id="main_sec">
+        <label for="fname">FIRST NAME</label>
+        <input type="text" id="fname" name="fname" maxlength="30" placeholder="Enter First Name" required>
+        <p id="p1">(max 30 characters a-z and A-Z)</p><br>
+
+        <label for="fname">LAST NAME</label>
+        <input type="text" id="fname" name="fname" maxlength="30" placeholder="Enter Last Name" required>
+        <p id="p1">(max 30 characters a-z and A-Z)</p><br>
+
+        <label for="fname">DATE OF BIRTH</label>
+        <input type="date" required> <br>
+
+        <label for="fname">EMAIL ID</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter email" required> <br>
+
+        <label for="fname">MOBILE NUMBER</label>
+        <input type="text" id="fname" name="fname"  maxlength="10" placeholder="Enter mobile number" required>
+        <p id="p1">(10 digits number)</p><br>
+
+        <label for="fname">Gender</label>
+        <input type="radio">
+        <label for="html">Male</label>
+        <input type="radio">
+        <label for="css">Female</label><br>
+
+        <label for="fname">ADRESS</label>
+        <textarea id="message" name="message" rows="6" cols="100" required></textarea><br>
+
+        <label for="fname">CITY</label>
+        <input type="text" id="fname" name="fname"  maxlength="30" placeholder="Enter your City" required>
+        <p id="p1">(max 30 characters a-z and A-Z)</p><br>
+
+        <label for="fname">PIN CODE</label>
+        <input type="text" id="fname" name="fname" maxlength="6" placeholder="Enter pincode" required>
+        <p id="p1">(6 digits number)</p><br>
+
+        <label for="fname">STATE</label>
+        <input type="text" id="fname"  maxlength="30" name="fname" placeholder="Enter State" required>
+        <p id="p1">(max 30 characters a-z and A-Z)</p><br>
+
+        <label for="fname">COUNTRY</label>
+        <input type="text" id="fname" name="fname" placeholder="Country"required><br >
+
+        <label for="fname">HOBBIES</label>
+        <input type="checkbox" id="hobby1" name="hobby1">
+        <label for="hobby1">Drawing</label>
+        <input type="checkbox" id="hobby2" name="hobby2">
+        <label for="hobby2">Singing</label>
+        <input type="checkbox" id="hobby2" name="hobby2">
+        <label for="hobby2">Sketching</label>
+        <input type="checkbox" id="hobby2" name="hobby2">
+        <label for="hobby2">others</label><br><br>
+
+        <label for="fname">QUALIFICATION</label>
+        <table id="colort" >
+            <thead>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Examination</th>
+
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" name="board1"></td>
+                    <td><input type="text" name="percentage1"></td>
+                    <td><input type="text" name="year1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class Xll</td>
+                    <td><input type="text" name="board2"></td>
+                    <td><input type="text" name="percentage2"></td>
+                    <td><input type="text" name="year2"></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" name="board2"></td>
+                    <td><input type="text" name="percentage2"></td>
+                    <td><input type="text" name="year2"></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Master</td>
+                    <td><input type="text" name="board2"></td>
+                    <td><input type="text" name="percentage2"></td>
+                    <td><input type="text" name="year2"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>(10 char max)</td>
+                    <td>(upto 2 decimal places)</td>
+                    <td></td>
+                </tr>
+
+
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+    </div>
+    <div id="sec1">
+        <div>
+            <br>
+
+            <label for="fname">COURSES <br>APPLIED FOR </label>
+            <input type="radio">
+            <label for="html">BCA</label>
+            <input type="radio">
+            <label for="css">B.Com</label>
+            <input type="radio">
+            <label for="css">B.Sc</label>
+            <input type="radio">
+            <label for="css">B.A</label>
+        </div>
+        <div id="button">
+            <button type="submit" class="btn1">Submit</button>
+            <button type="submit" class="btn1">Reset</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

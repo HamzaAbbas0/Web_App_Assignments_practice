@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: #F6F2FF;
+}
+
+nav {
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+.ulflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.ulflex>li>a {
+    text-decoration: none;
+
+
+}
+
+.btn1 {
+    width: 120px;
+    height: 40px;
+    padding: 5px 26px;
+    border-radius: 30px;
+    border: transparent;
+    color: white;
+    transition: background-color 0.3s ease;
+    background: var(--gradient-purple-gradient-12, linear-gradient(90deg, #DA22FF 0%, #9733EE 100%));
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+}
+
+.btn1:hover , 
+.inside-button:hover {
+    background: var(--gradient-orange-gradient-12, linear-gradient(90deg, #FFA500 0%, #FFD700 100%));
+    color: black;
+}
+
+.sec-head {
+    color: var(--cold-grey-black, #000);
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-head .spn {
+    color: var(--colors-purple-dark, #BF5AF2);
+}
+
+.sec-head .spn1 {
+    color: var(--red-40, #FF7C7C);
+}
+
+.secp {
+    color: var(--cold-grey-70, #505258);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .big-input {
+    width: 380px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .inside-button {
+    width: 120px;
+    height: 40px;
+    padding: 5px 26px;
+    background: var(--gradient-purple-gradient-12, linear-gradient(90deg, #DA22FF 0%, #9733EE 100%));
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #secflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  #sec-submain {
+    position: relative; /* Make the parent container a positioning context */
+  }
+  #lines-image {
+    transform: rotate(5deg); 
+    width: 90%;
+  }
+  
+  #imac-image {
+    position: absolute; /* Position the iMac image absolutely */
+    top: 0px;
+    left: 0px;
+    width: 90%;
+  }
+  
+  #sec-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
